@@ -1,0 +1,282 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?28q6zf');
+  src:  url('fonts/icomoon.eot?28q6zf#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?28q6zf') format('truetype'),
+    url('fonts/icomoon.woff?28q6zf') format('woff'),
+    url('fonts/icomoon.svg?28q6zf#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icono-pantallazo-on:before {
+  content: "\e940";
+}
+.icon-adjuntar-off:before {
+  content: "\e900";
+}
+.icon-adjuntar-on:before {
+  content: "\e901";
+}
+.icon-adjunto-administrador .path1:before {
+  content: "\e902";
+  color: rgb(216, 217, 221);
+}
+.icon-adjunto-administrador .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(130, 130, 130);
+}
+.icon-adjunto-administrador .path3:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(130, 130, 130);
+}
+.icon-adjunto-usuario .path1:before {
+  content: "\e905";
+  color: rgb(237, 238, 240);
+}
+.icon-adjunto-usuario .path2:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(130, 130, 130);
+}
+.icon-adjunto-usuario .path3:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(130, 130, 130);
+}
+.icon-alerta-off:before {
+  content: "\e908";
+}
+.icon-alerta-on:before {
+  content: "\e909";
+}
+.icon-bloquear-usuario:before {
+  content: "\e90a";
+}
+.icon-chat-abierto-off .path1:before {
+  content: "\e90b";
+  color: rgb(179, 179, 179);
+}
+.icon-chat-abierto-off .path2:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(237, 238, 240);
+}
+.icon-chat-abierto-off .path3:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(237, 238, 240);
+}
+.icon-chat-abierto-on .path1:before {
+  content: "\e90e";
+  color: rgb(130, 130, 130);
+}
+.icon-chat-abierto-on .path2:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(237, 238, 240);
+}
+.icon-chat-abierto-on .path3:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(237, 238, 240);
+}
+.icon-chat-cerrado-off .path1:before {
+  content: "\e911";
+  color: rgb(179, 179, 179);
+}
+.icon-chat-cerrado-off .path2:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: rgb(237, 238, 240);
+}
+.icon-chat-cerrado-off .path3:before {
+  content: "\e913";
+  margin-left: -1em;
+  color: rgb(237, 238, 240);
+}
+.icon-chat-cerrado-on .path1:before {
+  content: "\e914";
+  color: rgb(130, 130, 130);
+}
+.icon-chat-cerrado-on .path2:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(237, 238, 240);
+}
+.icon-chat-cerrado-on .path3:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: rgb(237, 238, 240);
+}
+.icon-chat-controlado:before {
+  content: "\e917";
+}
+.icon-chat-directo:before {
+  content: "\e918";
+}
+.icon-chat-habilitado:before {
+  content: "\e919";
+}
+.icon-chat-inhabilitado:before {
+  content: "\e91a";
+}
+.icon-chat-off .path1:before {
+  content: "\e91b";
+  color: rgb(237, 238, 240);
+}
+.icon-chat-off .path2:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(130, 130, 130);
+}
+.icon-chat-off .path3:before {
+  content: "\e91d";
+  margin-left: -1em;
+  color: rgb(202, 84, 85);
+}
+.icon-chat-off .path4:before {
+  content: "\e91e";
+  margin-left: -1em;
+  color: rgb(202, 84, 85);
+}
+.icon-chat-off .path5:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(202, 84, 85);
+}
+.icon-chat-on .path1:before {
+  content: "\e920";
+  color: rgb(237, 238, 240);
+}
+.icon-chat-on .path2:before {
+  content: "\e921";
+  margin-left: -1em;
+  color: rgb(130, 130, 130);
+}
+.icon-chat-on .path3:before {
+  content: "\e922";
+  margin-left: -1em;
+  color: rgb(155, 185, 51);
+}
+.icon-chat-on .path4:before {
+  content: "\e923";
+  margin-left: -1em;
+  color: rgb(155, 185, 51);
+}
+.icon-chat:before {
+  content: "\e924";
+}
+.icon-dar-palabra-off:before {
+  content: "\e925";
+}
+.icon-dar-palabra-on:before {
+  content: "\e926";
+}
+.icon-descargar-pdf-off:before {
+  content: "\e927";
+}
+.icon-descargar-pdf-on:before {
+  content: "\e928";
+}
+.icon-desmutear-off:before {
+  content: "\e929";
+}
+.icon-desmutear-on:before {
+  content: "\e92a";
+}
+.icon-enviar-off:before {
+  content: "\e92b";
+}
+.icon-enviar-on:before {
+  content: "\e92c";
+}
+.icon-enviar-ubicacion-off:before {
+  content: "\e92d";
+}
+.icon-enviar-ubicacion-on:before {
+  content: "\e92e";
+}
+.icon-habilitar-usuario:before {
+  content: "\e92f";
+}
+.icon-mensaje-directo-off:before {
+  content: "\e930";
+}
+.icon-mensaje-directo-on:before {
+  content: "\e931";
+}
+.icon-mutear-off:before {
+  content: "\e932";
+}
+.icon-mutear-on:before {
+  content: "\e933";
+}
+.icon-icono-pedir-palabra-off:before {
+  content: "\e934";
+}
+.icon-icono-pedir-palabra-on:before {
+  content: "\e935";
+}
+.icon-icono-usuario-activo .path1:before {
+  content: "\e936";
+  color: rgb(155, 185, 51);
+}
+.icon-icono-usuario-activo .path2:before {
+  content: "\e937";
+  margin-left: -1em;
+  color: rgb(130, 130, 130);
+}
+.icon-icono-usuario-activo .path3:before {
+  content: "\e938";
+  margin-left: -1em;
+  color: rgb(130, 130, 130);
+}
+.icon-icono-usuario-activo .path4:before {
+  content: "\e939";
+  margin-left: -1em;
+  color: rgb(155, 185, 51);
+}
+.icon-usuario-bloqueado-off:before {
+  content: "\e93a";
+}
+.icon-usuario-bloqueado-on .path1:before {
+  content: "\e93b";
+  color: rgb(202, 84, 85);
+}
+.icon-usuario-bloqueado-on .path2:before {
+  content: "\e93c";
+  margin-left: -1em;
+  color: rgb(130, 130, 130);
+}
+.icon-usuario-bloqueado-on .path3:before {
+  content: "\e93d";
+  margin-left: -1em;
+  color: rgb(130, 130, 130);
+}
+.icon-usuario-bloqueado-on .path4:before {
+  content: "\e93e";
+  margin-left: -1em;
+  color: rgb(202, 84, 85);
+}
+.icon-usuario-inactivo:before {
+  content: "\e93f";
+}
+

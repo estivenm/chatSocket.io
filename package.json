@@ -1,0 +1,29 @@
+{
+  "name": "chatNode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/main.js"
+  },
+  "keywords": [],
+  "author": "Juan Estiven Mazo Moreno",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mysql": "^2.14.1",
+    "socket.io": "^1.7.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass-lint": "^1.3.2",
+    "gulp-uglify": "^2.1.0",
+    "gulp-util": "^3.0.8",
+    "nodemon": "^1.11.0",
+    "webshot": "^0.18.0"
+  }
+}

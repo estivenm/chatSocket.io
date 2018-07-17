@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!--mobile -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!--Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!--Jquery  alertas mensajes-->
+    <script src="js/push.min.js" type="text/javascript"></script>
+    <!--Libreria que se va utilizar en el servidor y cliente -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- <script src="../node_modules/socket.io-client/dist/socket.io.js"></script> -->
+    <script src="js/main.js"></script>
+    <!--estilos-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="fuentes/style.css">
+    <!--FancyBox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.js" type="text/javascript"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js" type="text/javascript"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!--cabezera de chat -->
+    <div class="top">
+      <div class="avatarChat">
+        <span class="icon-chat icosTop"></span>
+      </div>
+      <div class="infoChat">
+        Chat en vivo
+        <!--<audio src="Afrojack.mp3" preload="auto" controls></audio>-->
+      </div>
+      <div class="chat-on-off">
+        <span id="cerrrarChat" class="icon-chat-on icosTop">
+				<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+        </span>
+      </div>
+    </div>
+    <!--cuerpo de chat -->
+    <div class="container">
+      <div class="panelChat">
+        <!--contenedor de mensajes de chat -->
+        <div class="contenMsgA" id="msg"></div>
+        <!--controles chat-->
+        <div class="controlesChat">
+          <span class="nameUserC"></span>
+          <input type="radio" name="ctlrChat" id="ctlrChatC" class="controlesR" value="controlado">
+          <label for="ctlrChatC" class="icon-chat-controlado lblControles" title="Chat controlado"></label>
+          <input type="radio" name="ctlrChat" id="ctlrChatCe" class="controlesR" value="cerrado">
+          <label for="ctlrChatCe" class=" icon-chat-cerrado-off lblControles" title="Chat Cerrado">
+					<span class="path1"></span><span class="path2"></span><span class="path3"></span>					
+				</label>
+          <input type="radio" name="ctlrChat" id="ctlrChatA" class="controlesR" value="abierto">
+          <label for="ctlrChatA" class="icon-chat-abierto-off lblControles" title="Chat abierto">
+					<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+				</label>
+        </div>
+        <!--contenedor texto -->
+        <div class="contenedorText">
+          <form onsubmit="return addmessages(this)" id="formcHat" action="/j" method="POST">
+            <input type="hidden" readonly id="idU" value="">
+            <input type="hidden" name="mensaje" readonly id="idUser" placeholder="id">
+            <input type="hidden" readonly id="user" placeholder="usuario">
+            <!--controles mensajes-->
+            <div class="controlMsg">
+              <textarea name="mensaje" id="texto" class="texto" placeholder="Escriba un mensaje" onkeyup="introA(event)"></textarea>
+              <div class="controlMsg2">
+                <button type="submit" id="btnEnvia" class="icon-enviar-on"></button>
+                <input type="file" name="" class="inputfile" id="imagenA">
+                <label for="imagenA" class="icon-adjuntar-off"></label>
+              </div>
+            </div>
+            <div id="preloader"></div>
+          </form>
+        </div>
+        <!--configuracion de auto respuesta -->
+        <div class="confiC">
+          <label for="">Autorespuesta: </label><input class="autoR" value="En breves segundos responderemos tus inquietudes.">
+          <label for="" Tiempo> Tiempo: </label>
+          <select class="time">
+                <option value="1" selected>1</option>
+                 <option value="2">2</option>
+                 <option value="4">4</option>
+                 <option value="6">6</option>
+                 <option value="8">8</option>
+                 <option value="10">10</option>
+             </select>
+          <label for="">   Min  </label>
+          <label class="icon-enviar-on btnConfig"></label>
+        </div>
+      </div>
+      <div class="panelActivos">
+        <!--cabezera activos -->
+        <div class="activos">
+          <span id="nroActivos"></span>
+        </div>
+        <!--cuerpo conectados -->
+        <div id="contenConectados"></div>
+      </div>
+      <!--modal chat cerrado -->
+      <a href="#resultadoConversar" id="converContenido"></a>
+      <div style="display:none;">
+        <div id="resultadoConversar">
+          <!--cabezera de chat cerrado -->
+          <div class="top nameUserC"></div>
+          <!--contenedor texto cerrado-->
+          <div id="resultadoConversa" class="contenMsg">
+
+          </div>
+          <div class="controlMsg">
+            <textarea name="" id="texto2" class="texto" placeholder="Escriba un mensaje" onkeyup="introA(event)"></textarea>
+            <!--controles mensajes cerrado-->
+            <div class="controlMsg2">
+              <button type="submit" id="btnEnvia" class="icon-enviar-on" onclick="addmessages(this)"></button>
+              <input type="file" name="" class="inputfile" id="imagenA2" onclick="subirImagen(id)">
+              <label for="imagenA" class="icon-adjuntar-off"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
